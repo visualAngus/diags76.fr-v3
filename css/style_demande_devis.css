@@ -1,0 +1,323 @@
+.all_page{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+.info_personnelles_div{
+    margin-left: 1%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titre{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 7vw;
+    max-height: 50px;
+    font-family: "stevie-sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+}
+.prise_infos{
+    width: 100%;
+    /* height: 100%; */
+    margin-top: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #3363af33;
+    border-bottom: solid 0.2em #3363af;
+    gap: 15px;
+}
+.prise_infos a{
+    color: var(--main-txt-color-08);
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+
+}
+.input_parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.input{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.options_main{
+    max-width: 100%;
+}
+.input_parent label{
+    margin-right: 15px;
+    width: 20%;
+    text-align: right;
+}
+.input input[type=text]{
+    max-width: 100%;
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #3363af;
+    background-color: #3363af33;
+	border-radius: .2em .2em 0.1em 0.1em;
+	padding: .4em;
+	color: #ffffff;
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+.input input[type=email]{
+    max-width: 100%;
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #3363af;
+    background-color: #3363af33;
+	border-radius: .2em .2em 0.1em 0.1em;
+	padding: .4em;
+	color: #ffffff;
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+.input input[type=tel]{
+    max-width: 100%;
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #3363af;
+    background-color: #3363af33;
+	border-radius: .2em .2em 0.1em 0.1em;
+	padding: .4em;
+	color: #ffffff;
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+/* fin info perso */
+.info_bien{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.all_inputs{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius:20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #3363af33;
+    border-bottom: solid 0.2em #3363af;
+}
+.question{
+    width: 50%;
+    text-align: right;
+}
+.row{
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+select{
+    width: 15em;
+}
+option {
+    height: 60px;
+}
+.input select{
+    border: none;
+    outline: none;
+    background-color: #3363af33;
+    border: 0.15em solid #3363af;
+    border-radius: .2em;
+    padding: .4em;
+    padding-left: .7em;
+    padding-right: .7em;
+    color: #ffffff;
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+.options{
+    font-size: 1em;
+    color: white;
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #3363af;
+}
+.info_bien input[type="text"]{
+    width: 15em;
+}
+/* fin info bien */
+.diags_div{
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.diags{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius:20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #3363af33;
+    border-bottom: solid 0.2em #3363af;
+}
+.diag{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    border-radius:10px;
+    padding:2%;
+    background-color: #3363af33;
+    border-bottom: solid 0.2em #3363af;
+    animation: all 0.5s;
+    animation: opacity 0.5s;
+}
+.diag_title{
+    font-size: 1.5em;
+    width: 50%;
+    text-align: right;
+}
+input[type=checkbox] {
+    appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #3363af33;
+    margin: 0;
+	font: inherit;
+    color: currentColor;
+    border: .2em solid #3363af;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+		content: "";
+		width: 0.65em;
+		height: 0.65em;
+		transform: scale(1);
+        opacity: 0;
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 1em 1em #ffffff;
+		clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+		transform-origin: left top;
+	}
+    &:checked::before {
+		opacity: 1;
+	}
+}
+.diag p{
+    font-size: 0.9em;
+    width: 100%;
+    text-align: center;
+    color: var(--main-txt-color-08);
+}
+#commune_p{
+    font-size: 0.9em;
+}
+
+.diag_title_commune{
+    width:100%;
+
+}
+.comm_envoie{
+    margin-top: 15px;
+    width: 100%;
+    margin-left: 1%;
+    display: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    animation: all 0.5s;
+    animation: opacity 0.5s;
+    margin-bottom: 25px;
+}
+@keyframes opacity {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.comm_envoie h2{
+    text-align: center;
+    width: 26%;
+    font-size: 1.6em;
+}
+.comm_envoie textarea{
+    width: 46%;
+    height: 200px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.soumettre{
+    margin-left: 15px;
+    width: 15em;
+}
+.soumettre_txt{
+    margin-left: 35px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#envoie_message{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color: #33af33;
+}

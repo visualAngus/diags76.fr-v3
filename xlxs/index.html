@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://diags76.fr/"> 
+    <title>Lire un fichier CSV en JavaScript avec encodage spécifique</title>
+</head>
+<body>
+    <button onclick="readCSV()">Lire le fichier CSV</button>
+    <div id="csvOutput"></div>
+
+    <script>
+        function readCSV() {
+            const filePath = './fichier2.csv';
+            fetch(filePath)
+            .then(response => response.arrayBuffer())
+            .then(buffer => {
+                const uint8Array = new Uint8Array(buffer);
+                const encoding = detectEncoding(uint8Array);
+                const csvContent = new TextDecoder(encoding).decode(uint8Array);
+                const csvData = parseCSV(csvContent);
+                
+                // displayCSV(csvData);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function detectEncoding(uint8Array) {
+            // Logique de détection de l'encodage si nécessaire
+            // Pour cet exemple, nous retournons 'windows-1252' ou 'utf-8' en fonction de vos besoins
+            // Vous pouvez utiliser des bibliothèques externes pour une détection automatique plus précise
+            return 'utf-8'; // ou 'utf-8'
+        }
+
+        function parseCSV(csvContent) {
+            // Détecter et gérer les retours à la ligne (CRLF pour Windows ou LF pour Unix)
+            const rows = csvContent.split(/\r\n|\n/);
+            return rows.map(row => row.split(';'));
+        }
+
+        function displayCSV(csvData) {
+            const outputDiv = document.getElementById('csvOutput');
+            outputDiv.innerHTML = '';
+
+            const table = document.createElement('table');
+            csvData.forEach(row => {
+                console.log(row);   
+                const tr = document.createElement('tr');
+                let class_nom = row[0];
+                tr.className = class_nom;
+                row.forEach(cell => {
+                    const td = document.createElement('td');
+                    td.textContent = cell;
+                    tr.appendChild(td);
+                });
+                table.appendChild(tr);
+            });
+
+            outputDiv.appendChild(table);
+        }
+    </script>
+</body>
+</html>

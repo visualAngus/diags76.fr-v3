@@ -1,0 +1,141 @@
+@media only screen and (max-width: 950px) {
+    .formulaire_global{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 5%;
+    }
+    .titre_formulaire{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2%;
+        font-size: 1em;
+    }
+    .all_questions_and_inputs{
+        height: auto;
+        width: 90%;
+        max-height: none;
+        margin-right: 5%;
+        flex-direction: column;
+        /* height: 90vh; */
+    }
+    .all_inputs{
+        width: 100%;
+        padding: 2%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        max-height: none;
+        /* height: 100%; */
+    }
+    .row{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .question{
+        width: 100%;
+        text-align: center;
+        padding-right: 0%;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+
+    }
+    .input,.input_radio{
+        width: 100%;
+        text-align: center;
+        padding-left:0%;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    .phrases{
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+        font-size: 0.9em;
+        margin-bottom: 2%;
+        
+    }
+    .formulaire_services_option{
+        width: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-right: 0%;
+        /* margin-top: 80%; */
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .formulaire_services_option .row{
+        padding: 0%;
+        flex-direction: row;
+        margin-bottom: 2%;
+        width: 80%;
+        flex-basis: 15vh;
+    }
+    .formulaire_services_option .question{
+        width: 80%;
+
+    }
+    .formulaire_services_option .input,.input_radio{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* transform: translate(0,25%); */
+    }
+    .sub_div{
+        /* width: 100%; */
+        padding: 2%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        max-height: none;
+        flex-direction: column;
+        height:60%;
+    }
+    .submit_div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #bt_devis_bas{
+        max-width: none;
+        font-size: 1em;
+    }
+    #sub_haut{
+        display: none;
+    }
+    .sub_div_bas{
+        display: flex;
+        width: 100%;
+    }
+    .sub_div_haut{
+        display: flex;
+        width: 100%;
+    }
+    #sub_bas{
+        display: none;
+        width: 90%;
+        margin-right: 5%;
+    }
+    .texte_validite{
+        position: relative;
+        width: 90%;
+        transform: translateY(-2.8em);
+        font-size: 0.8em;
+    }
+    .formulaire_services_option #amiante_div .texte_validite{
+        transform: translateY(-4em);
+    }
+    .inputs_eamil_name{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

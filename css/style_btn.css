@@ -1,0 +1,85 @@
+.btn_header, .btn_header_devis,.btn_devis,.btn_diagnostics,.btn_card,.btn_info_diags76,.bt,.soumettre,.btn_devis_demande{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 60%;
+    background-color: transparent;
+    color: var(--main-txt-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 0.5em;
+}
+.btn_header{
+    border-radius: 0.5em;
+    height: 20%;
+    padding: 1.4em;
+}
+.btn_header:hover{
+    background-color: var(--main-bleu-color);
+}
+.btn_header_devis:hover{
+    border-radius: 1.25em;
+}
+.btn_devis:hover{
+    border-radius: 1.25em;
+}
+.btn_header_devis{
+    height: 10%;
+    width: 90%;
+    font-size: 1.2em;
+    background-color: var(--main-bleu-color);
+    padding: 1.4em;
+}
+.btn_devis{
+    margin-top: 30px;
+    height: 60px;
+    width: 300px;
+    font-size: 1.2em;
+    background-color: var(--main-bleu-color);
+}
+.btn_diagnostics{
+    margin-top: 5%;
+    height: 60px;
+    width: 50%;
+    font-size: 1.2em;
+    background-color: var(--main-bleu-color);
+}
+.btn_card{
+    height: 40px;
+    width: 50%;
+    background-color: var(--main-bleu-color);
+    font-size: 1rem;
+    border-radius: 8px;
+    
+}
+.btn_info_diags76,.btn_devis_demande{
+    margin-top: 10px;
+    height: 50px;
+    width: 45%;
+    background-color: var(--main-bleu-color);
+    font-size: 1rem;
+    border-radius: 8px;
+}
+#bt_devis_bas{
+    height: 40px;
+    width: 90%;
+    background-color: var(--main-bleu-color);
+    font-size: 0.88rem;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.soumettre{
+    margin-top: 30px;
+    height: 60px;
+    width: 300px;
+    font-size: 1.2em;
+    background-color: var(--main-bleu-color);
+}

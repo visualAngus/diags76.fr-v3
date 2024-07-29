@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="canonical" href="https://diags76.fr/"> 
+    <style>
+        .btn_modif_class {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <button class="btn_modif_class" onclick="saveChanges()">Enregistrer les modifications</button>
+    <div id="contenuExterne"></div>
+</body>
+<script src="./js/admin_modif_page.js"></script>
+<script>
+
+    // Sélection de l'élément où le contenu sera inséré
+    const conteneur = document.getElementById('contenuExterne');
+
+    // Chemin vers le fichier HTML externe
+    const urlFichier = 'index.html';
+
+    // Utilisation de fetch pour récupérer le contenu du fichier HTML
+    fetch(urlFichier)
+        .then(response => response.text())
+        .then(data => {
+            // Insertion du contenu dans l'élément cible
+            conteneur.innerHTML = data;
+            // Suppression des href des balises a
+        })
+        .catch(error => {
+            console.error(`Erreur de chargement du fichier : ${error}`);
+        });
+
+    function saveChanges() {
+        const urlFichier = 'index.html';
+
+        // Récupération du contenu modifié depuis la div
+        const contenuModifie = conteneur.innerHTML;
+
+        // Créer un objet Blob avec le contenu HTML
+        // Envoie du contenu HTML au serveur PHP
+        fetch('./php/enregistrer_fichier.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ htmlContent: contenuModifie }),
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur HTTP : ' + response.status);
+                }
+                return response.text();
+            })
+            .then(data => {
+                alert('Modifications enregistrées');
+                console.log('Réponse du serveur :', data);
+            })
+            .catch(error => {
+                alert('Erreur lors de l\'enregistrement des modifications');
+                console.error('Erreur lors de la requête Fetch :', error);
+            });
+        // Rafraîchir la page pour charger le nouveau HTML
+        // location.reload(true);
+    }
+    
+
+</script>
+
+</html>

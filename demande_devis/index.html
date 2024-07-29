@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demandez un devis</title>
+    <link rel="canonical" href="https://diags76.fr/"> 
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_btn.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_adaptative.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/eem5dwh.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/style_demande_devis.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_demande_devis_adaptative.css">
+</head>
+<body>
+    <header>
+        <div class="logo_header_div">
+            <img src="../imgs/logo x2 c .png" alt="logo" class="logo_header">
+        </div>
+        <script>
+            let logo_btn = document.querySelector(".logo_header");
+            logo_btn.addEventListener("click", () => {
+                window.location.href = "https://diags76.fr/";
+            });
+        </script>
+        <div class="btn_header_div">
+            <a href="https://diags76.fr/" class="btn_header">Accueil</a>
+            <a href="https://diags76.fr/#services" class="btn_header" id="services_btn">Services</a>
+            <a href="https://diags76.fr/#contact" class="btn_header" id="contact_btn">Contact</a>
+        </div>
+        <div class="devis_header_div">
+            <a class="tel_header">07.67.21.00.56</a>
+            <a href="devis" class="btn_header_devis">Demander un devis</a>
+        </div>
+    </header>
+    <div class="all_page">
+        <div class="info_personnelles_div">
+            <h2 id="titre">Informations personnelles</h2>
+            <div class="prise_infos">
+                <div class="input_parent">
+                    <label for="nom">Nom</label>
+                    <div class="input" id="#nom">
+                        <input type="text" name="nom" id="nom" placeholder="Nom">
+                    </div>
+                </div>
+                <div class="input_parent">
+                    <label for="prenom">Prénom</label>
+                    <div class="input" id="#prenom">
+                        <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                    </div>
+                </div>
+                <div class="input_parent">
+                    <label for="email">Email</label>
+                    <div class="input" id="#email">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="input_parent">
+                    <label for="tel">Téléphone</label>
+                    <div class="input" id="#tel">
+                        <input type="tel" name="tel" id="tel" placeholder="Téléphone">
+                    </div>
+                </div>
+                <a>Réponse sous 48h</a>
+            </div>
+        </div>
+        <div class="info_bien">
+            <h2 id="titre">Que souhaitez vous faire ?</h2>
+            <div class="all_inputs">
+                <div class="row" id="vendre_louer_div">
+                    <div class="question">
+                        Vous souhaitez ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="vendre_louer">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="Vendre">Vendre</option>
+                            <option class="options" value="Louer">Louer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="type_de_bien">
+                    <div class="question">
+                       Quel est le type de bien ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="type_de_bien_select">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="1">Maison</option>
+                            <option class="options" value="2">Appartement</option>
+                            <option class="options" value="3">Immeuble collectif d'habitation</option>
+                            <option class="options" value="0">Local commercial</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="permis_de_construire_date_div">
+                    <div class="question">
+                        Quelle est la date du permis de construire ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="permis_de_construire_date">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="49">Avant le 01/01/1949</option>
+                            <option class="options" value="4997">Entre le 01/01/1949 et le 01/07/1997</option>
+                            <option class="options" value="97">Après le 01/07/1997</option>
+                            <option class="options" value="0">Je ne sais pas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="superficie_div">
+                    <div class="question">
+                        Quelle est la superficie du bien et de ses annexes ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="superficie">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="50">inférieure à 50m²</option>
+                            <option class="options" value="50100">51 à 100m²</option>
+                            <option class="options" value="101150">101 à 150m²</option>
+                            <option class="options" value="151">151m² et plus</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="nb_pieces_div">
+                    <div class="question">
+                        Quel est le nombre de pièces ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="nb_pieces">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="1">1</option>
+                            <option class="options" value="2">2</option>
+                            <option class="options" value="3">3</option>
+                            <option class="options" value="4">4</option>
+                            <option class="options" value="5">5</option>
+                            <option class="options" value="6">6</option>
+                            <option class="options" value="7">7</option>
+                            <option class="options" value="8">8 ou plus</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="installation_gaz_div">
+                    <div class="question">
+                        Y a t-il une installation de gaz ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="installation_gaz">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="1">Pas de gaz </option>
+                            <option class="options" value="2">Oui, datant de moins de 15 ans</option>
+                            <option class="options" value="3">Oui, datant de plus de 15 ans</option>
+                            <option class="options" value="0">Je ne sais pas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="installation_electricite_div">
+                    <div class="question">
+                        Y a t-il une installation d'électricité ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="installation_electricite">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="1">Pas d'électricité</option>
+                            <option class="options" value="2">Oui, datant de moins de 15 ans</option>
+                            <option class="options" value="3">Oui, datant de plus de 15 ans</option>
+                            <option class="options" value="0">Je ne sais pas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="adresse_div">
+                    <div class="question">
+                        Adresse du bien
+                    </div>
+                    <div class="input">
+                        <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+                    </div>
+                </div>
+                <div class="row" id="code_postal_div">
+                    <div class="question">
+                        Code postal
+                    </div>
+                    <div class="input">
+                        <input type="text" name="code_postal" id="code_postal" placeholder="Code postal">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="diags_div"> 
+            <h2 id="titre">Selectionnez vos diagnostics</h2>
+            <div class="diags" id="diags">
+               
+            </div>
+        </div>
+        <div class="comm_envoie">
+            <h2>Avez-vous quelque chose à ajouter ?</h2>
+            <textarea name="commentaire" id="commentaire" placeholder="Commentaire"></textarea>
+            <div class="soumettre_txt">
+                <a id="envoie_message"></a>
+                <button class="soumettre" onclick="sendEmail()">Soumettre</button>
+            </div>
+        </div>
+    </div>
+<script src="../js/demande_devis.js"></script>
+<script src="../js/demande_devis_envoie.js"></script>
+</body>
+</html>

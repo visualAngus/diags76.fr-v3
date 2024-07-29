@@ -1,0 +1,11 @@
+# Bloque tous les robots de l'accès à l'annuaire des devis
+User-agent: *
+Disallow: /devis/
+Disallow: /admin/
+Disallow: /private/
+
+# Permet à tous les robots d'indexer toutes les autres pages
+Allow: /
+
+# Indique l'emplacement du sitemap
+Sitemap: https://www.diags76.fr/sitemap.xml

@@ -1,0 +1,56 @@
+@media only screen and (max-width: 950px) {
+.all_page{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_personnelles_div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info_bien{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.diags_div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comm_envoie{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.comm_envoie h2{
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.comm_envoie textarea{
+    width: 100%;
+    height: 100px;
+}
+.soumettre{
+    margin-left: 15px;
+    width: 15em;
+    height: 3em;
+    margin-bottom: 25px;
+}
+
+
+#titre{
+    font-size: 1em;
+}
+.prise_infos,.all_inputs,.diags{
+    margin-top: 10px;
+}
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DIAGS76 Devis - Diagnostics Immobiliers en Normandie, Experts Certifiés</title>
+    <meta charset="utf-8">
+    <link rel="canonical" href="https://www.diags76.fr/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_btn.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_adaptative.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eem5dwh.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles_formulaire.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles_formulaire_adaptative.css">
+    <link rel="icon" type="image/png" href="./imgs/logo_small x2 c.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo_header_div">
+            <img src="../imgs/logo x2 c .png" alt="logo" class="logo_header">
+        </div>
+        <script>
+            let logo_btn = document.querySelector(".logo_header");
+            logo_btn.addEventListener("click", () => {
+                window.location.href = "https://diags76.fr/";
+            });
+        </script>
+        <div class="btn_header_div">
+            <a href="https://diags76.fr/" class="btn_header">Accueil</a>
+            <a href="https://diags76.fr/#services" class="btn_header" id="services_btn">Services</a>
+            <a href="https://diags76.fr/#contact" class="btn_header" id="contact_btn">Contact</a>
+        </div>
+        <div class="devis_header_div">
+            <a class="tel_header">07.67.21.00.56</a>
+            <a href="devis" class="btn_header_devis">Demander un devis</a>
+        </div>
+    </header>
+    <div class="titre_formulaire">
+        <h1>QUELS DIAGNOSTICS ME CONCERNENT</h1>
+        <!-- <div class="ligne" id="ligne_formulaire"></div> -->
+    </div>
+    <div class="formulaire_global">
+        <div class="all_questions_and_inputs">
+            <div class="all_inputs">
+                <div class="row" id="vendre_louer_div">
+                    <div class="question">
+                        Vous souhaitez ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="vendre_louer">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="Vendre">Vendre</option>
+                            <option class="options" value="Louer">Louer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="maison_apartement_div">
+                    <div class="question">
+                        Quel est votre type de bien ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="maison_apartement">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="1">Maison</option>
+                            <option class="options" value="2">Appartement</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="permis_de_construire_date_div">
+                    <div class="question">
+                        Quelle est la date du permis de construire ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="permis_de_construire_date">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="49">Avant le 01/01/1949</option>
+                            <option class="options" value="4997">Entre le 01/01 /1949 et le 01/07/1997</option>
+                            <option class="options" value="97">Après le 01/07/1997</option>
+                            <option class="options" value="0">Je ne sais pas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="installation_gaz_div">
+                    <div class="question">
+                        Y a t-il une installation de gaz ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="installation_gaz">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="1">Pas de gaz </option>
+                            <option class="options" value="2">Oui, datant de moins de 15 ans</option>
+                            <option class="options" value="3">Oui, datant de plus de 15 ans</option>
+                            <option class="options" value="0">Je ne sais pas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="installation_electricite_div">
+                    <div class="question">
+                        Y a t-il une installation d'électricité ?
+                    </div>
+                    <div class="input">
+                        <select class="options_main" name="dropdown" id="installation_electricite">
+                            <option class="options" value="" selected disabled hidden>Choisissez une option</option>
+                            <option class="options" value="1">Pas d'électricité</option>
+                            <option class="options" value="2">Oui, datant de moins de 15 ans</option>
+                            <option class="options" value="3">Oui, datant de plus de 15 ans</option>
+                            <option class="options" value="0">Je ne sais pas</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_div_haut">
+            </div>
+        </div>
+        <div class="formulaire_services_option">
+            <div class="row" id="amiante_div">
+                <div class="question">
+                    Diagnostic amiante
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="amiante" id="checkbox_amiante">
+                </div>
+            </div>
+            <div class="row" id="dpe_div">
+                <div class="question">
+                    DPE
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="dpe" id="checkbox_dpe">
+                </div>
+            </div>
+            <div class="row" id="erp_div">
+                <div class="question">
+                    ERP
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="erp" id="checkbox_erp">
+                </div>
+            </div>
+            <div class="row" id="plomb_div">
+                <div class="question">
+                    Diagnostic plomb
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="plomb" id="checkbox_plomb">
+                </div>
+            </div>
+            <div class="row" id="gaz_div">
+                <div class="question">
+                    Diagnostic gaz
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="gaz" id="checkbox_gaz">
+                </div>
+            </div>
+            <div class="row" id="electricite_div">
+                <div class="question">
+                    Diagnostic électricité
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="electricite" id="checkbox_electricite">
+                </div>
+            </div>
+            <div class="row" id="termites_div">
+                <div class="question">
+                    Diagnostic termites
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="termites" id="checkbox_termites">
+                </div>
+            </div>
+            <div class="row" id="loi_carrez_div">
+                <div class="question">
+                    Loi Carrez
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="loi_carrez" id="checkbox_loi_carrez">
+                </div>
+            </div>
+            <div class="Termites_question_div" id="Termites_question_div">
+                <div class="question">
+                    <div class="question" id="termites">
+                        Diagnostic termites
+                    </div>
+                    <p>Sur votre commune, l'arrêté préfectoral impose-t-il un diagnostic termites. Ce    diagnostic dépend
+                        de votre adresse. Il sera étudié lors de la prise de rendez-vous.</p>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="Termites_question" id="checkbox_Termites_question">
+                </div>
+            </div>
+            <a href="https://diags76.fr/demande_devis/"  class="btn_devis_demande">Demander un devis</a>    
+        </div>
+    </div>
+    <div class="sub_div_bas">
+    </div>
+</body>
+<script src="./scripts/script_formulaire.js"></script>
+<script>
+
+    function create_submit() {
+        let subDiv = document.createElement("div");
+        subDiv.className = "sub_div";
+        if (screen.width < 950) {
+            subDiv.id = "sub_bas";
+        } else {
+            subDiv.id = "sub_haut";
+        }
+
+        let inputsEmailName = document.createElement("div");
+        inputsEmailName.className = "inputs_eamil_name";
+
+        let nomDiv = document.createElement("div");
+        nomDiv.className = "row";
+        nomDiv.id = "nom_div";
+
+        let nomQuestion = document.createElement("div");
+        nomQuestion.className = "question";
+        nomQuestion.textContent = "Nom";
+
+        let nomInputDiv = document.createElement("div");
+        nomInputDiv.className = "input";
+        nomInputDiv.id = "nom_input_div";
+
+        let nomInput = document.createElement("input");
+        nomInput.type = "text";
+        nomInput.name = "nom";
+        nomInput.id = "nom_add";
+
+        nomDiv.appendChild(nomQuestion);
+        nomInputDiv.appendChild(nomInput);
+        nomDiv.appendChild(nomInputDiv);
+
+        let emailDiv = document.createElement("div");
+        emailDiv.className = "row";
+        emailDiv.id = "amail_div";
+
+        let emailQuestion = document.createElement("div");
+        emailQuestion.className = "question";
+        emailQuestion.textContent = "Email";
+
+        let emailInputDiv = document.createElement("div");
+        emailInputDiv.className = "input";
+        emailInputDiv.id = "email_input_div";
+
+        let emailInput = document.createElement("input");
+        emailInput.type = "text";
+        emailInput.name = "email";
+        emailInput.id = "email_add";
+
+        emailDiv.appendChild(emailQuestion);
+        emailInputDiv.appendChild(emailInput);
+        emailDiv.appendChild(emailInputDiv);
+
+        inputsEmailName.appendChild(nomDiv);
+        inputsEmailName.appendChild(emailDiv);
+
+        let submitDiv = document.createElement("div");
+        submitDiv.className = "submit_div";
+
+        let submitButton = document.createElement("button");
+        submitButton.className = "bt";
+        submitButton.id = "bt_devis_bas";
+        submitButton.textContent = "Envoyer la demande de devis";
+
+        submitDiv.appendChild(submitButton);
+
+        subDiv.appendChild(inputsEmailName);
+        subDiv.appendChild(submitDiv);
+
+
+        if (screen.width < 950) {
+            document.getElementsByClassName("sub_div_bas")[0].appendChild(subDiv);
+        } else {
+            document.getElementsByClassName("sub_div_haut")[0].appendChild(subDiv);
+        }
+    }
+    create_submit();
+
+    let diag_proposes = [];
+    let propose_option = document.getElementsByClassName("formulaire_services_option")[0].querySelectorAll('input');
+    propose_option.forEach(function (input) {
+        input.addEventListener("change", function () {
+            if (input.checked) {
+                diag_proposes.push(input.name);
+                this.style.backgroundColor = "#33af33";
+            } else {
+                diag_proposes = diag_proposes.filter(item => item !== input.name);
+                this.style.backgroundColor = "#3363af33";
+            }
+            // if (diag_proposes.length > 0) {
+            //     if (screen.width < 950) {
+            //         document.getElementById("sub_bas").style.display = "flex";
+            //     } else {
+            //         document.getElementsByClassName("sub_div_haut")[0].style.width = "100%";
+            //         document.getElementById("sub_haut").style.display = "flex";
+            //     }
+            //     let elem = document.getElementById("sub_bas");
+            //     elem.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+
+            // } else {
+            //     if (screen.width < 950) {
+            //         document.getElementById("sub_bas").style.display = "none";
+            //     } else {
+            //         document.getElementsByClassName("sub_div_haut")[0].style.width = "0%";
+            //         // document.getElementById("sub_haut").style.display = "none";
+            //     }
+            // }
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://diags76.fr/"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploader un fichier</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <style>
+        #modif_page {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 150px;
+        }
+        .instructions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+    </style>
+</head>
+<body>  
+    <div class="header">
+        <H1>Page de modification</H1>
+    </div>
+    <div class="instructions">
+        <h3>Instructions: importez le fichier html pius le dossier qui lui est associé.</h3>
+        <button id="modif_page" onclick="window.location.href = '../admin_modify'">page de modification</button>
+    </div>
+    <!-- <div id="service" class="service">
+        <h2>Services</h2>
+        <h3>Uploader un fichier</h3>
+        <input type="hidden" name="upload_path" value="../conditions_generales_de_vente">
+        <label for="file">Sélectionner un fichier :</label><br>
+        <input type="file" name="file" id="file"><br>
+        <button onclick="uploadfichier()">Uploader le fichier</button>
+        <h3>Uploader un dossier</h3>
+        <input type="file" id="folderInput" webkitdirectory directory multiple>
+        <button onclick="uploadFolder()">Uploader le dossier</button>
+    </div> -->
+    
+</body>
+
+<script src="js/admin.js"></script>
+<script src="js/create_page.js"></script>
+<script>
+function uploadfichier(nom, path, input) {
+    const file = input.files[0];
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('upload_path', path);
+    formData.append('file_name', nom);
+
+    fetch('upload_fichier.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+        alert(result);
+        console.log(result);
+    })
+    .catch(error => {
+        console.error('Erreur:', error);
+    });
+}
+function uploadFolder(nom, path,input) {
+    const files = input.files;
+    const formData = new FormData();
+    
+    if (files.length > 0) {
+        const folderName = files[0].webkitRelativePath.split('/')[0];
+        console.log(folderName);
+        formData.append('folderName', folderName);
+    }
+
+    for (let i = 0; i < files.length; i++) {
+        formData.append('files[]', files[i], files[i].webkitRelativePath);
+    }
+    formData.append('upload_path', path);
+    fetch('upload_folder.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+        alert(result);
+        console.log(result);
+    })
+    .catch(error => {
+        console.error('Erreur:', error);
+    });
+}
+</script>
+</html>
