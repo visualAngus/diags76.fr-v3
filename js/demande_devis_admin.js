@@ -1,5 +1,23 @@
 diags_list = ["Amiante", "DPE", "ERP", "Plomb", "Electricité", "Loi carrez / loi Boutin","Gaz","Termites","commune"]
 
+fetch('../php/connection_verif.php', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+})
+.then(response => response.json())
+.then(data => {
+    if (data == "0") {
+        console.log("Not connected");
+        window.location.href = "../connection/index.html";
+    }else {
+        console.log("Connected");
+    }
+})
+.catch(error => {
+    console.error(error);
+});
 
 function commune(nom){
     const main = document.getElementById('diags');

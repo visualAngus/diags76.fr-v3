@@ -17,7 +17,7 @@
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("si", $token, $id);
         $stmt->execute();
-        setcookie('user_token', $token, time() + 3600*2, '/');
+        setcookie('user_token', $token, time() + 3600*24*200, '/');
         echo "Vous êtes connecté !";
     } else {
         echo "Nom d'utilisateur ou mot de passe incorrect.";
@@ -44,7 +44,7 @@
             alert("Not connected");
             window.location.href = "../connection/index.html";
         }else {
-            window.location.href = "../";
+            window.location.href = "../admin";
             alert("Connected");
         }
     })
