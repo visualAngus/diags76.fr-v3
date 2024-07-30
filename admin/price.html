@@ -9,10 +9,18 @@
     <link rel="stylesheet" type="text/css" href="../css/style_btn.css">
     <link rel="stylesheet" type="text/css" href="../css/style_adaptative.css">
     <link rel="icon" type="image/png" href="../imgs/logo_small x2 c.png">
+
     <link rel="stylesheet" href="https://use.typekit.net/eem5dwh.css">
 
     <link rel="stylesheet" type="text/css" href="../css/style_demande_devis.css">
     <link rel="stylesheet" type="text/css" href="../css/style_demande_devis_adaptative.css">
+    <style>
+        .comm_envoie{
+            display: none;
+            margin: 0;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,36 +44,6 @@
         </div>
     </header>
     <div class="all_page">
-        <div class="info_personnelles_div">
-            <h2 id="titre">Informations personnelles</h2>
-            <div class="prise_infos">
-                <div class="input_parent">
-                    <label for="nom">Nom</label>
-                    <div class="input" id="#nom">
-                        <input type="text" name="nom" id="nom" placeholder="Nom">
-                    </div>
-                </div>
-                <div class="input_parent">
-                    <label for="prenom">Prénom</label>
-                    <div class="input" id="#prenom">
-                        <input type="text" name="prenom" id="prenom" placeholder="Prénom">
-                    </div>
-                </div>
-                <div class="input_parent">
-                    <label for="email">Email</label>
-                    <div class="input" id="#email">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="input_parent">
-                    <label for="tel">Téléphone</label>
-                    <div class="input" id="#tel">
-                        <input type="tel" name="tel" id="tel" placeholder="Téléphone">
-                    </div>
-                </div>
-                <a>Réponse sous 48h</a>
-            </div>
-        </div>
         <div class="info_bien">
             <h2 id="titre">Que souhaitez vous faire ?</h2>
             <div class="all_inputs">
@@ -169,40 +147,17 @@
                         </select>
                     </div>
                 </div>
-                <div class="row" id="adresse_div">
-                    <div class="question">
-                        Adresse du bien
-                    </div>
-                    <div class="input">
-                        <input type="text" name="adresse" id="adresse" placeholder="Adresse">
-                    </div>
-                </div>
-                <div class="row" id="code_postal_div">
-                    <div class="question">
-                        Code postal
-                    </div>
-                    <div class="input">
-                        <input type="text" name="code_postal" id="code_postal" placeholder="Code postal">
-                    </div>
-                </div>
             </div>
         </div>
         <div class="diags_div"> 
-            <h2 id="titre">Selectionnez vos diagnostics</h2>
             <div class="diags" id="diags">
-               
             </div>
         </div>
         <div class="comm_envoie">
-            <h2>Avez-vous quelque chose à ajouter ?</h2>
-            <textarea name="commentaire" id="commentaire" placeholder="Commentaire"></textarea>
-            <div class="soumettre_txt">
-                <a id="envoie_message"></a>
-                <button class="soumettre" onclick="sendEmail()">Soumettre</button>
-            </div>
+            <button class="soumettre" onclick="sendEmail()">Prix</button>
         </div>
     </div>
-<script src="../js/demande_devis.js"></script>
-<script src="../js/demande_devis_envoie.js"></script>
+<script src="../js/demande_devis_admin.js"></script>
+<script src="../js/demande_devis_envoie_admin.js"></script>
 </body>
 </html>
