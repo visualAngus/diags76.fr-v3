@@ -1,6 +1,14 @@
-#  DIAGS76.fr 
+# Diags76
 
-## Web Site :
+Diags76 est un projet visant à fournir une plateforme web pour la gestion et la visualisation des diagnostics immobiliers. Ce projet est développé en utilisant PHP et MySQL, et est hébergé sur un serveur XAMPP.
 
-  - The site internet est le premier site pour l'entreprise [Diags76](https://diags76.fr/). Ce site est un site vitrine.
-  - Le site contient également une gestion admin du contenue et également un générateur de devis personalisé.
+## Fonctionnalités
+
+- **Gestion des diagnostics** : Ajout, modification et suppression des diagnostics immobiliers.
+- **Visualisation des données** : Affichage des diagnostics sous forme de tableaux et graphiques.
+- **Authentification** : Système de connexion pour les utilisateurs autorisés.
+- **Interface utilisateur** : Interface web intuitive et facile à utiliser.
+- 
+## Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
