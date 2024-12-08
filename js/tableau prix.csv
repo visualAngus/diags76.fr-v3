@@ -1,0 +1,36 @@
+﻿GRILLE TARIFAIRE DIAGS 76 2024 ttc;;;;
+;;;;
+APPARTEMENT;;;;
+Type de Diagnostic;Appartement STUDIO / T1;Appartement T2 / T3;Appartement T4 / T5;Appartement T6 et plus
+A_ Nb de piece ;2;4;6;
+DPE;100;120;150;180
+Amiante*;80;100;120;140
+Plomb;100;120;150;180
+Electricité;60;80;100;120
+Gaz;70;90;110;130
+Mesurage;70;90;110;130
+ERP;50;50;50;50
+Termites;80;100;120;140
+;;;;
+;;;;
+;;;;
+;;;;
+MAISON INDIVIDUELLE;;;;
+Type de Diagnostic;Maison              ≤ 50 m²;Maison             51-100 m²;Maison            101-150 m²;Maison             > 151 m²
+M_ Superficie;50;100;150;
+DPE;120;150;180;200
+Amiante*;100;120;140;160
+Plomb;120;140;170;200
+Electricité;80;100;120;140
+Gaz;90;110;130;150
+Loi Carrez / Loi Boutin;90;110;130;150
+ERP;50;50;50;50
+Termites;100;120;140;160
+;;;;
+*PRELEVEMENT ET ANALYSE EN LABORATOIRE;;;70€ / PRELEVEMENT;
+;;;;
+AUDIT;;;;
+;Audit seul;;Audit suite à nos diagnostics;
+JUSQU AU T3;650;;450;
+T4 / T5;750;;550;
+T6 et plus ;850;;650;

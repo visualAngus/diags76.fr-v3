@@ -2,7 +2,7 @@ let total_price = 0;
 let liste_price = [];
 let liste_diags_user_final = [];
 
-function get_price_appart(type,nb_piece,csv,liste_diags_user){
+function get_price_appart(type,nb_piece,csv,liste_diags_user,superficie){
     let diags_liste = [];
     if (type == "Appartement") {
         for (let i = 0; i < csv.length; i++) {
@@ -14,6 +14,8 @@ function get_price_appart(type,nb_piece,csv,liste_diags_user){
             }
         }
     }else {
+        // convert nb piece to supperficie
+        nb_piece = parseInt(superficie);
         for (let i = 0; i < csv.length; i++) {
             if (csv[i][0].startsWith("M_")) {
                 for (let j = 0; j < 9; j++) {
@@ -23,15 +25,14 @@ function get_price_appart(type,nb_piece,csv,liste_diags_user){
             }
         }
     }
-
     let col_nb_piece = 0;
-    let main_nb = diags_liste[0];
-    for (let i = 0; i < main_nb.length; i++) {
+    let main_nb = diags_liste[0].slice(1,diags_liste[0].length);
+    for (let i = 0; i < main_nb.length; i++) {  
         if (main_nb[i] >= nb_piece) {
-            col_nb_piece = i;
+            col_nb_piece = i+1;
             break;
-        }else if (nb_piece >= main_nb[main_nb.length - 2]){
-            col_nb_piece = main_nb.length - 1;
+        } else if (nb_piece > main_nb[main_nb.length - 2]) {
+            col_nb_piece = main_nb.length;
             break;
         }
     }
@@ -51,8 +52,8 @@ function get_price_appart(type,nb_piece,csv,liste_diags_user){
     }
 }
 
-function readCSV(type,nb_piece,liste_diags_user) {
-    const filePath = './fichier2.csv';
+function readCSV(type,nb_piece,liste_diags_user,superficie) {
+    const filePath = '../demande_devis/tableau prix.csv';
     fetch(filePath)
     .then(response => response.arrayBuffer())
     .then(buffer => {
@@ -61,8 +62,7 @@ function readCSV(type,nb_piece,liste_diags_user) {
         const csvContent = new TextDecoder(encoding).decode(uint8Array);
         const csvData = parseCSV(csvContent);
         nb_piece = parseInt(nb_piece);
-        get_price_appart(type,nb_piece,csvData,liste_diags_user);
-        console.log(total_price,liste_price,liste_diags_user_final);
+        get_price_appart(type,nb_piece,csvData,liste_diags_user,superficie);
         sendEmail2(total_price,liste_price,liste_diags_user_final);
         
     })
@@ -187,7 +187,18 @@ function sendEmail() {
     liste_price = [];
     liste_diags_user_final = [];
     let data = get_all_info();
-   readCSV(data.typeDeBien,data.nbPieces,data.diagnostic);
+    let superficie = data.superficie;
+    if (superficie== 'inférieure à 50m²') {
+        superficie = "50";
+    }else if (superficie == '51 à 100m²') {
+        superficie = "100";
+    }else if (superficie == '101 à 150m²') {
+        superficie = "150";
+    }else if (superficie == '151m² et plus') {
+        superficie = "200";
+    }
+
+    readCSV(data.typeDeBien,data.nbPieces,data.diagnostic,superficie);
 }
 
 function sendEmail2(total,list_price,list_diags) {

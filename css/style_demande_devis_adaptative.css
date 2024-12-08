@@ -23,6 +23,7 @@
     align-items: center;
 }
 .comm_envoie{
+    margin-left: 0;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -45,8 +46,13 @@
     height: 3em;
     margin-bottom: 25px;
 }
-
-
+#envoie_message{
+    height: 50px;
+}
+.soumettre_txt{
+    width: 100%;
+    margin: 0;
+}
 #titre{
     font-size: 1em;
 }

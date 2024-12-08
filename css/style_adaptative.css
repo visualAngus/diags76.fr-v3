@@ -38,7 +38,7 @@
         width: 100%;
     }
     .ben_presentation_div{
-        height: 135vh;
+        height: auto;
         flex-direction: column;
     }
     .img_ben{
@@ -204,5 +204,11 @@
         align-items: center;
         border-bottom: solid 1px var(--main-txt-color);
         transition: all 0.2s ease-in-out;
+    }
+    
+    #errer_message{
+        font-size: 10px;
+        height: 10px;
+        width: 90%;
     }
 }

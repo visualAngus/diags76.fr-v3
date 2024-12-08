@@ -1,17 +1,19 @@
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" lang="fr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIAGS76 - Diagnostics Immobiliers en Normandie, Experts Certifiés</title>
     <link rel="stylesheet" href="css/style_btn.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_service_cards.css">
     <link rel="stylesheet" href="css/style_adaptative.css">
     <link rel="stylesheet" href="https://use.typekit.net/eem5dwh.css">
     <link rel="icon" type="image/png" href="./imgs/logo_small x2 c.png">
     <link rel="canonical" href="https://diags76.fr/"> 
+
     <meta name="description" content="DIAGS76, votre partenaire pour les diagnostics immobiliers en Normandie. Avec notre équipe d'experts certifiés, nous proposons des services complets de diagnostic immobilier. Contactez-nous pour obtenir des conseils professionnels et un devis personnalisé.">
-    <meta name="keywords" content="diagnostics immobiliers, diag, diags, Eure, Normandie, 76, 27, diagnostic amiante, diagnostic gaz, diagnostic électricité, DPE, diagnostic termites, diagnostic plomb, diagnostic ERP, mesurage loi CARREZ, mesurage loi BOUTIN, Rouen, Le Havre, Évreux">
+    <meta name="keywords" content="diagnostics immobiliers, diagnostic immobilier, diag, diags, Eure, Normandie, Seine-Maritime, 76, 27, amiante, gaz, électricité, DPE, termites, plomb, ERP, mesurage loi Carrez, loi Boutin, Rouen, Le Havre, Évreux">
     <meta name="robots" content="index, follow">
     <meta property="og:image" content="./imgs/logo google.png">
-    <meta name="google-site-verification" content="HAT8E5PdFZ4ElnnIkUY8AR0F5Bc4ADKTP5pCh_IizVA">
+    <meta name="google-site-verification" content="HAT8E5PdFZ4ElnnIkUY8AR0F5Bc4ADKTP5pCh_IizVA" />
     <script type="application/ld+json">
         {
         "@context": "https://schema.org",
@@ -29,6 +31,25 @@
     <meta name="twitter:description" content="DIAGS76, votre partenaire pour les diagnostics immobiliers en Normandie. Avec notre équipe d'experts certifiés, nous proposons des services complets de diagnostic immobilier. Contactez-nous pour obtenir des conseils professionnels et un devis personnalisé.">
     <meta name="twitter:image" content="https://diags76.fr/imgs/logo_small_x2_c.png">
 
+    <meta name="author" content="DIAGS76">
+    <meta name="geo.region" content="FR-76">
+    <meta name="geo.placename" content="Rouen">
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "LocalBusiness",
+          "name": "DIAGS76",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2 allée de soleure",
+            "addressLocality": "Rouen",
+            "postalCode": "76000"
+          },
+          "telephone": "07 67 21 00 56",
+          "email": "contact@diags76.fr"
+        }
+    </script>
 
     <header>
         <div class="logo_header_div">
@@ -43,7 +64,7 @@
         <div class="btn_header_div">
             <a href="https://diags76.fr/" class="btn_header">Accueil</a>
             <a class="btn_header" id="services_btn">Services</a>
-            <button class="btn_header" id="contact_btn">Contact</button>
+            <button class="btn_header" id="contact_btn" aria-label="Contacter DIAGS76">Contact</button>
         </div>
         <div class="devis_header_div">
             <a class="tel_header">07.67.21.00.56</a>
@@ -51,11 +72,11 @@
         </div>
     </header>
     <div class="menu_tel">
-        <button class="btn_menu_tel" id="menu_btn_tel">-MENU-</button>
+        <button class="btn_menu_tel" id="menu_btn_tel" aria-label="MENU">-MENU-</button>
     </div>
     <div class="btn_dif_menu">
-        <button class="btn_menu_tel" id="services_btn_tel">Services</button>
-        <button class="btn_menu_tel" id="contact_btn_tel">Contact</button>
+        <button class="btn_menu_tel" id="services_btn_tel" aria-label="Services de DIAGS76">Services</button>
+        <button class="btn_menu_tel" id="contact_btn_tel" aria-label="Contacter DIAGS76">Contact</button>
     </div>
     <script>
         let btn_tel_contact_go = document.getElementById('contact_btn_tel');
@@ -86,12 +107,12 @@
     </script>
     <div class="container_vid_div">
         <div class="video">
-            <video src="imgs/vid_presentation.mp4" autoplay="" loop="" muted=""></video>
+            <video src="imgs/vid_presentation.mp4" autoplay="" loop="" muted="" alt="Video de rouen" loading="lazy"></video>
         </div>
         <div class="txt_div">
-            <img src="imgs/logo_small x2 c.png" alt="logo" class="logo_vid">
+            <img src="imgs/logo_small x2 c.png" alt="logo Diags 76" class="logo_vid" loading="lazy">
         </div>
-        <h1 class="" id="titre">DIAGS76 est une société spécialisée dans les diagnostics immobiliers.</h1>
+        <h1 class="titre" id="titre">DIAGS76 est une société spécialisée dans les diagnostics immobiliers.</h1>
         <h2 id="sous_titre">
             Nous intervenons sur la région Normande : Seine-maritime et Eure.<br>Nous sommes certifiés et assurés pour vous garantir un travail de qualité.
         </h2>
@@ -100,7 +121,7 @@
     <div class="ben_presentation_div">
         <div class="img_ben"></div>
         <div class="ben_presentation">
-            <img src="imgs/logo x2 c .png" alt="logo" class="logo_ben_presentation">
+            <img src="imgs/logo x2 c .png" alt="logo Diags 76" class="logo_ben_presentation" loading="lazy">
             <h2 id="titre_ben">Je suis Benjamin LANNOT, le fondateur de DIAGS76. Expert en efficacité énergétique des bâtiments, certifié (avec et sans mention) et assuré pour réaliser vos diagnostics immobiliers. Je reste à votre disposition pour répondre à vos questions et vous accompagner dans vos démarches. C’est avec plaisir que je vous accompagnerai dans vos projets immobiliers de vente, de location ou de travaux.</h2>
             <br>
             <h2 id="titre_ben">Que ce soit pour un diagnostic amiante, gaz, électricité, DPE, termites, plomb, ERP ou encore pour un mesurage Loi Carrez / Loi Boutin, n'hésitez pas à me contacter.</h2>
@@ -109,9 +130,9 @@
     </div>
     <div class="nos_services_div">
         <div class="texte_accroche">
-            <img src="imgs/logo_small x2 c.png" alt="logo" class="logo_accroche">
-            <h1 id="titre_service">NOS SERVICES</h1>
-            <h1 id="sous-titre_accroche"> Une solution complète</h1>
+            <img src="imgs/logo_small x2 c.png" alt="logo Diags 76" class="logo_accroche" loading="lazy">
+            <h2 id="titre_service">NOS SERVICES</h2>
+            <h2 id="sous-titre_accroche"> Une solution complète</h2>
             <p id="diag_immo_txt">en diagnostic immobilier</p>
             <!-- <p id="nom_txt">DIAGS76 accompagne</p> -->
             <p id="entreprise_particulier_txt">Particuliers / Professionnels</p>
@@ -119,76 +140,76 @@
     </div>
     <div class="all_services_div">
         <div class="card" id="DPE">
-            <img src="imgs/logos_services/DPE.png" alt="logo" class="logo_card">
+            <img src="imgs/logos_services/DPE.png" alt="logo DPE" class="logo_card" loading="lazy">
             <div id="txt_card">
                 <h2 id="titre_card">DPE</h2>
                 <p>Diagnostic de Performance<br>Energétique</p>
             </div>
-            <button class="btn_card" id="1">En savoir plus</button>
+            <button class="btn_card" id="1" aria-label="DPE">En savoir plus</button>
         </div>
         <div class="card" id="Amiante">
-            <img src="imgs/logos_services/Amiante.png" alt="logo" class="logo_card">
+            <img src="imgs/logos_services/Amiante.png" alt="logo Amiante" class="logo_card" loading="lazy">
             <div id="txt_card">
                 <h2 id="titre_card">Amiante</h2>
                 <p>Diagnostic Amiante</p>
             </div>
-            <button class="btn_card" id="2">En savoir plus</button>
+            <button class="btn_card" id="2" aria-label="Amiante">En savoir plus</button>
         </div>
         <div class="card" id="Gaz">
-            <img src="imgs/logos_services/Gaz.png" alt="logo" class="logo_card">
+            <img src="imgs/logos_services/Gaz.png" alt="logo Gaz" class="logo_card" loading="lazy">
             <div id="txt_card">
                 <h2 id="titre_card">Gaz</h2>
                 <p>Diagnostic Gaz</p>
             </div>
-            <button class="btn_card" id="7">En savoir plus</button>
+            <button class="btn_card" id="7" aria-label="Gaz">En savoir plus</button>
         </div>
         <div class="card" id="Termites">
-            <img src="imgs/logos_services/Termites.png" alt="logo" class="logo_card">
+            <img src="imgs/logos_services/Termites.png" alt="logo Termites" class="logo_card" loading="lazy">
             <div id="txt_card">
                 <h2 id="titre_card">Termites</h2>
                 <p>Diagnostic Termites</p>
             </div>
-            <button class="btn_card" id="4">En savoir plus</button>
+            <button class="btn_card" id="4" aria-label="Termites">En savoir plus</button>
         </div>
         <div class="card" id="Electricité">
-            <img src="imgs/logos_services/electricite.png" alt="logo" class="logo_card">
+            <img src="imgs/logos_services/electricite.png" alt="logo électricité" class="logo_card" loading="lazy">
             <div id="txt_card">
                 <h2 id="titre_card">Electricité</h2>
                 <p>Diagnostic Electricité</p>
             </div>
-            <button class="btn_card" id="5">En savoir plus</button>
+            <button class="btn_card" id="5" aria-label="Electricité">En savoir plus</button>
         </div>
         <div class="card" id="ERP">
-            <img src="imgs/logos_services/ERP.png" alt="logo" class="logo_card">
+            <img src="imgs/logos_services/ERP.png" alt="logo ERP" class="logo_card" loading="lazy">
             <div id="txt_card">
                 <h2 id="titre_card">ERP</h2>
                 <p>Etat des Risques<br>et Pollutions</p>
             </div>
-            <button class="btn_card" id="6">En savoir plus</button>
+            <button class="btn_card" id="6" aria-label="ERP">En savoir plus</button>
         </div>
         <div class="card" id="Audit_énergétique">
-            <img src="imgs/logos_services/Audit.png" alt="logo" class="logo_card">
+            <img src="imgs/logos_services/Audit.png" alt="logo Audit" class="logo_card" loading="lazy">
             <div id="txt_card">
                 <h2 id="titre_card">Audit énergétique</h2>
                 <p>Audit énergétique</p>
             </div>
-            <button class="btn_card" id="3">En savoir plus</button>
+            <button class="btn_card" id="3" aria-label="Audit énergétique">En savoir plus</button>
         </div>
         <div class="card" id="Loi">
-            <img src="imgs/logos_services/carrez.png" alt="logo" class="logo_card">
+            <img src="imgs/logos_services/carrez.png" alt="logo Carrez" class="logo_card" loading="lazy">
             <div id="txt_card">
                 <h2 id="titre_card">Loi Carrez <br>Loi Boutin</h2>
                 <p>Mesure Loi Carrez / Loi Boutin</p>
             </div>
-            <button class="btn_card" id="9">En savoir plus</button>
+            <button class="btn_card" id="9" aria-label="Loi Carrez">En savoir plus</button>
         </div>
         <div class="card" id="Plomb">
-            <img src="imgs/logos_services/plomb.png" alt="logo" class="logo_card">
+            <img src="imgs/logos_services/plomb.png" alt="logo Plomb" class="logo_card" loading="lazy">
             <div id="txt_card">
                 <h2 id="titre_card">Plomb</h2>
                 <p>Diagnostic Plomb</p>
             </div>
-            <button class="btn_card" id="8">En savoir plus</button>
+            <button class="btn_card" id="8" aria-label="Plomp">En savoir plus</button>
         </div>
     </div>
     <div class="contact_div_all">
@@ -202,7 +223,7 @@
                 <input type="text" id="nom" placeholder="Nom" required="">
                 <input type="email" id="email" placeholder="Email" required="">
                 <p id="errer_message"></p>
-                <button class="btn_contact" onclick="sendEmail()">Envoyer</button>
+                <button class="btn_contact" onclick="sendEmail()" aria-label="Envoie de l'email">Envoyer</button>
             </div>
             <div class="zone_txt_div">
                 <textarea name="message" id="message" placeholder="Message" required=""></textarea>
@@ -210,7 +231,7 @@
         <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
     </div>
     <div class="info_diags76_div">
-        <img src="imgs/logo x2 c .png" alt="logo" class="logo_info_diags76">
+        <img src="imgs/logo x2 c .png" alt="logo Diags 76" class="logo_info_diags76" loading="lazy">
         <div class="info_diags">
             <h2 id="titre_info_diags76">Votre diagnostiqueur immobilier en Normandie</h2>
             <div id="ligne"></div>
@@ -220,15 +241,15 @@
             <a href="https://diags76.fr/demande_devis/" class="btn_info_diags76">Demander un devis</a>
         </div>
         <div class="btn_devis_info_diags">
-            <img class="qr" src="https://qrcode.tec-it.com/API/QRCode?data=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aFN%3bCHARSET%3dUTF-8%3aBenjamin+LANNOT%0d%0aN%3bCHARSET%3dUTF-8%3aLANNOT%3bBenjamin%3b%3b%3b%0d%0aTEL%3bTYPE%3dHOME%2cVOICE%3a0767210056%0d%0aEMAIL%3acontact%40diags76.fr%0d%0aORG%3bCHARSET%3dUTF-8%3aDIAGS76%0d%0aADR%3bCHARSET%3dUTF-8%3a2+All%c3%a9e+de+Soleure%5c%2c+76000+ROUEN%0d%0aURL%3ahttps%3a%2f%2fwww.diags76.fr+%0d%0aEND%3aVCARD&amp;backcolor=%23ffffff"  ="">
+            <img class="qr" loading="lazy" src="https://qrcode.tec-it.com/API/QRCode?data=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aFN%3bCHARSET%3dUTF-8%3aBenjamin+LANNOT%0d%0aN%3bCHARSET%3dUTF-8%3aLANNOT%3bBenjamin%3b%3b%3b%0d%0aTEL%3bTYPE%3dHOME%2cVOICE%3a0767210056%0d%0aEMAIL%3acontact%40diags76.fr%0d%0aORG%3bCHARSET%3dUTF-8%3aDIAGS76%0d%0aADR%3bCHARSET%3dUTF-8%3a2+All%c3%a9e+de+Soleure%5c%2c+76000+ROUEN%0d%0aURL%3ahttps%3a%2f%2fwww.diags76.fr+%0d%0aEND%3aVCARD&amp;backcolor=%23ffffff" alt="qr code">
             <a class="">Fiche contact</a>
         </div>
     </div>
     <div class="assurance_div">
-        <img src="imgs/assurance/certif.jpg" alt="certification" class="img_assurance">
-        <img src="imgs/assurance/condorcet.png" alt="condorcet" class="img_assurance">
-        <img src="imgs/assurance/Allianz.png" alt="allianz" class="img_assurance">
-        <img src="imgs/assurance/liciel.png" alt="liciel" class="img_assurance">
+        <img src="imgs/assurance/certif.jpg" alt="certification" class="img_assurance" loading="lazy">
+        <img src="imgs/assurance/condorcet.png" alt="condorcet" class="img_assurance" loading="lazy">
+        <img src="imgs/assurance/Allianz.png" alt="allianz" class="img_assurance" loading="lazy">
+        <img src="imgs/assurance/liciel.png" alt="liciel" class="img_assurance" loading="lazy">
     </div>
     <footer>
         <div class="footer_div">
@@ -236,13 +257,11 @@
             <a href="mentions_legales" id="mentions_legales" class="">Mentions légales</a>
             <a href="conditions_generales_de_vente" id="conditions_generales" class="">Conditions générales de vente</a>
             <a href="RGPD" id="rgpd" class="">RGPD</a>
-            <div style="display: flex; flex-direction: row; gap: 5px;">
-                <p>Photo by </p><a href="https://www.freepik.com" target="_blank">Freepik</a>    
-            </div>
+            <p id="photo">Photo by Freepik</p>
             <p>© 2024 DIAGS76</p>
         </div>
     </footer>
-
+    
 <script src="js/general_home_page.js"></script>
 <script src="js/services.js"></script>
 <script src="js/contact.js"></script>

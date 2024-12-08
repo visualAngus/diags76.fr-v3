@@ -8,7 +8,7 @@
     <title>Uploader un fichier</title>
     <link rel="stylesheet" href="css/admin.css">
     <style>
-        #modif_page, #get_price {
+        #modif_page, #get_price, #refresh {
             background-color: #4CAF50;
             border: none;
             color: white;
@@ -41,10 +41,12 @@
         <H1>Page de modification</H1>
     </div>
     <div class="instructions">
-        <h3>Instructions: importez le fichier html pius le dossier qui lui est associé.</h3>
+        <h3>Instructions: importez le fichier html puis le dossier qui lui est associé.</h3>
         <div class="btn_admin">
             <button id="modif_page" onclick="window.location.href = '../admin_modify'">page de modification</button>
             <button id="get_price" onclick="window.location.href = 'price.html'">page des prix</button>
+            <button id="refresh" onclick=" location.reload(true);">refresh</button>
+
         </div>
     </div>
     <!-- <div id="service" class="service">
